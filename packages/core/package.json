@@ -1,0 +1,10 @@
+{
+  "name": "@autodoc/core",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Reads manual pages, runs the docs check and lint, and builds the in-app help index.",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist"],
+  "dependencies": { "picomatch": "^4.0.3", "yaml": "^2.8.1" },
+  "devDependencies": { "@types/picomatch": "^4.0.2" }
+}

@@ -1,0 +1,18 @@
+# autodoc settings for this app. Paths are relative to the app root (the folder holding docs/).
+pagesDir: docs/manual
+flowsDir: docs/flows
+shotsDir: docs/.shots
+# Where the built manual is served; "Learn more" links point here.
+docsUrl: /help
+# Scanned for data-help="id" / helpTip="id" so lint can catch help ids with no entry.
+sources:
+  - src/**/*.html
+  - src/**/*.js
+# App route -> manual page, for the help (?) button.
+routes:
+  /: getting-started
+  /invoices: invoices/create-invoice
+lookout:
+  server: http://localhost:4400
+  project: back-office-demo-docs
+  reviewers: [sam]

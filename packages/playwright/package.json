@@ -1,0 +1,10 @@
+{
+  "name": "@autodoc/playwright",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "docFlow() and shot(): Playwright doc flows that take repeatable, annotated manual screenshots.",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist"],
+  "dependencies": { "@autodoc/core": "0.1.0" },
+  "peerDependencies": { "@playwright/test": ">=1.45" }
+}
