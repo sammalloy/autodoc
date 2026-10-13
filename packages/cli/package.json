@@ -1,0 +1,9 @@
+{
+  "name": "@autodoc/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "autodoc check | lint | help-index | site | upload",
+  "bin": { "autodoc": "./dist/main.js" },
+  "files": ["dist"],
+  "dependencies": { "@autodoc/core": "0.1.0", "marked": "^16.4.0" }
+}

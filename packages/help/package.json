@@ -1,0 +1,8 @@
+{
+  "name": "@autodoc/help",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "In-app help: tooltips on [data-help] elements with a Learn more link, and a help drawer showing the manual.",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist"]
+}

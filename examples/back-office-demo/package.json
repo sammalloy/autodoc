@@ -1,0 +1,13 @@
+{
+  "name": "back-office-demo",
+  "private": true,
+  "type": "module",
+  "description": "A tiny stand-in for an Angular Back Office app, used to try and test autodoc end to end.",
+  "scripts": {
+    "start": "node serve.mjs",
+    "docs:shots": "playwright test -c playwright.docs.config.ts",
+    "docs:site": "autodoc site --app . --out docs-site",
+    "docs:check": "autodoc check --app .",
+    "docs:lint": "autodoc lint --app ."
+  }
+}

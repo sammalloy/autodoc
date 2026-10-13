@@ -1,0 +1,16 @@
+body { margin: 0; font: 14px/1.5 system-ui, sans-serif; color: #1f2329; background: #f6f7f9; }
+.bar { display: flex; align-items: center; gap: 24px; padding: 0 24px; height: 56px; background: #1f2a44; color: #fff; }
+.bar nav { flex: 1; display: flex; gap: 16px; }
+.bar a { color: #cdd6ea; text-decoration: none; }
+.bar a[aria-current] { color: #fff; font-weight: 600; }
+#help-button { width: 28px; height: 28px; border-radius: 14px; border: 1px solid #cdd6ea; background: none; color: #fff; cursor: pointer; }
+main { max-width: 960px; margin: 32px auto; padding: 0 24px; }
+.card { background: #fff; border: 1px solid #e3e5e8; border-radius: 8px; padding: 24px; }
+h1 { font-size: 22px; margin: 0 0 16px; display: flex; align-items: center; justify-content: space-between; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #eceef1; }
+.primary { background: #2f5bea; color: #fff; border: 0; border-radius: 6px; padding: 8px 14px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+label { display: block; font-weight: 600; margin: 16px 0 4px; }
+input, select { font: inherit; padding: 8px; border: 1px solid #c9ced6; border-radius: 6px; width: 320px; }
+.muted { color: #6b7280; }
+.actions { margin-top: 24px; display: flex; gap: 8px; }

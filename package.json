@@ -1,0 +1,25 @@
+{
+  "name": "autodoc",
+  "private": true,
+  "type": "module",
+  "description": "Docs-as-code toolkit: Playwright doc flows for screenshots, a docs check for PRs, in-app help tooltips, and Lookout upload.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "tsc -b packages/core packages/help packages/playwright packages/cli",
+    "typecheck": "npm run build",
+    "test": "npm run build && node --test test/*.test.ts",
+    "demo:shots": "npm run build && cd examples/back-office-demo && npx playwright test -c playwright.docs.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "^22.18.0",
+    "@types/pngjs": "^6.0.5",
+    "pngjs": "^7.0.0",
+    "typescript": "5.9.3"
+  }
+}
